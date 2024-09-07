@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome!</h1>
+<p><em>Thank you.</em></p>
+
+<!-- Containers to display the URL and path -->
+<p>Current URL: <span id="currentURL"></span></p>
+<p>Current Path: <span id="currentPath"></span></p>
+
+<script>
+    // Get the current URL and path
+    const currentURL = window.location.href;
+    const currentPath = window.location.pathname;
+
+    // Display them in the designated containers
+    document.getElementById("currentURL").textContent = currentURL;
+    document.getElementById("currentPath").textContent = currentPath;
+</script>
+
+</body>
+</html>
